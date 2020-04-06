@@ -9,13 +9,16 @@ export default function Navbar() {
             <img src={logo} alt="city tours logo" style={{width: 60, height:50}}></img>
             <ul className="nav-links">
                 <li><a href="/" className="nav-link">
-                    About
+                    About Us
                 </a></li>
-                <li><a href="/" className="nav-link ">
+                <li><a href="/" className="nav-link active ">
+                    Tours
+                </a></li>
+                <li><a href="/" className="nav-link">
                     Blog
                 </a></li>
-                <li><a href="/" className="nav-link active">
-                    Tours
+                <li><a href="/" className="nav-link">
+                    Contact Us
                 </a></li>
             </ul>
         </nav>
