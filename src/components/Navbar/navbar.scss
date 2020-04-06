@@ -4,7 +4,7 @@
     background: $secondGreen;
     padding: 0.5rem 1rem;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 
 }
@@ -33,4 +33,14 @@
 
 .active{
     color: $mainBlack;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#brand {
+    color: $mainGreen;
+    margin-left: -18px;
+
 }

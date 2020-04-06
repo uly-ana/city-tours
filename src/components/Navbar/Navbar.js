@@ -6,7 +6,8 @@ import logo from '../../logo.png'
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <img src={logo} alt="city tours logo" style={{width: 60, height:50}}></img>
+            <a href="#">
+                <img src={logo} alt="city tours logo" style={{ width: 60, height: 50 }}></img><text id="brand">City Tours</text></a>
             <ul className="nav-links">
                 <li><a href="/" className="nav-link">
                     About Us
