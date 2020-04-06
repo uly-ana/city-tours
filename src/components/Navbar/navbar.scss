@@ -1,0 +1,36 @@
+@import '../../index.scss';
+
+.navbar{
+    background: $secondGreen;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+
+}
+
+.nav-link{
+    color: $mainGreen;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.2s linear;
+    padding-left: 20px;
+
+
+    &:hover {
+        color: $mainBlack;
+    }
+}
+
+.active{
+    color: $mainBlack;
+}

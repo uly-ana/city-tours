@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.scss';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Navbar from './components/Navbar/Navbar'
 
-function App() {
-  return (
-    <div className="City Tours">
-      <h1>City Tours app</h1>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return (
+      <React.Fragment>
+        <Navbar />
+     </React.Fragment>
+    );
+  }
 }
-
 export default App;
