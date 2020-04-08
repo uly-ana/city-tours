@@ -9,6 +9,7 @@
         border-radius: 5px;
         min-width: 15rem;
         max-width: 100%;
+        opacity: 0.9;
     }
 }
 
@@ -18,9 +19,6 @@
         grid-template-columns: 2fr 2fr;
         grid-column-gap: 16px; 
     }
-        .overflow {
-           max-height: 5.4rem; 
-        }
 }
 
 .img-container {
@@ -55,25 +53,23 @@
         margin: 0.4rem 0 0.6rem 0;
     }
     h5{
-        text-transform: capitalize;
         font-size: 0.9rem;
-        padding-bottom: 0.3rem;
+        padding-bottom: 0.5rem;
+        text-align: justify;
+
         span {
             color: $mainBlue;
             margin-left: 0.3rem;
-            font-size: 0.9rem;
             cursor: pointer;
         }
         
     }
     .overflow {
-        white-space: wrap; 
-        overflow: hidden;
-        height: 9.7rem;
         line-height: 1.2em;
         font-size: 0.9rem;
         text-align: justify;
         min-width: 15rem;
         max-width: 100%;
+
     };
 }

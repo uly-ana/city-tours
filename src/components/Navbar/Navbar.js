@@ -18,7 +18,7 @@ export default function Navbar() {
         <ul className="nav-links">
           <li>
             <a href="/" className="nav-link">
-              About Us
+              About
             </a>
           </li>
           <li>
@@ -29,11 +29,6 @@ export default function Navbar() {
           <li>
             <a href="/" className="nav-link">
               Blog
-            </a>
-          </li>
-          <li>
-            <a href="/" className="nav-link">
-              Contact Us
             </a>
           </li>
         </ul>

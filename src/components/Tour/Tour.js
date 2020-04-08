@@ -14,14 +14,14 @@ export default class Tour extends Component {
 
     render() {
 
-        const {id, city, img, info, name} = this.props.tour;
+        const { id, city, img, info, name, description} = this.props.tour;
         const {removeTour} = this.props;
 
         return (
           <article className="tour">
             <div className="img-container">
               <img src={img} alt="tour image" />
-              <span className="close-btn" onClick={()=>removeTour(id)}>
+              <span className="close-btn" onClick={() => removeTour(id)}>
                 <i className="fas fa-window-close" />
               </span>
             </div>
@@ -29,9 +29,9 @@ export default class Tour extends Component {
               <h3>{city}</h3>
               <h4>{name}</h4>
               <h5>
-                More info{" "}
+                {description} {" "} More info
                 <span onClick={this.handleInfo}>
-                  <i class="fas fa-caret-square-down"></i>
+                  <i class="fas fa-angle-double-right"></i>
                 </span>
               </h5>
               {this.state.showInfo && <p className="overflow">{info}</p>}
