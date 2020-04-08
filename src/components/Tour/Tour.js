@@ -3,6 +3,15 @@ import './tour.scss'
 
 
 export default class Tour extends Component {
+    state ={
+        showInfo: false
+    };
+    handleInfo =()=>{
+        this.setState ({
+            showInfo: !this.state.showInfo
+        })
+    }
+
     render() {
 
         const {id, city, img, info, name} = this.props.tour;
@@ -12,7 +21,7 @@ export default class Tour extends Component {
           <article className="tour">
             <div className="img-container">
               <img src={img} alt="tour image" />
-              <span className="close-btn">
+              <span className="close-btn" onClick={()=>removeTour(id)}>
                 <i className="fas fa-window-close" />
               </span>
             </div>
@@ -21,11 +30,11 @@ export default class Tour extends Component {
               <h4>{name}</h4>
               <h5>
                 More info{" "}
-                <span>
+                <span onClick={this.handleInfo}>
                   <i class="fas fa-caret-square-down"></i>
                 </span>
               </h5>
-              <p className="overflow-ellipsis">{info}</p>
+              {this.state.showInfo && <p className="overflow">{info}</p>}
             </div>
           </article>
         );
