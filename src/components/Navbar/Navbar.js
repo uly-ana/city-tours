@@ -23,7 +23,7 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/" className="nav-link active ">
-              Distanations
+              Destination
             </a>
           </li>
           <li>
